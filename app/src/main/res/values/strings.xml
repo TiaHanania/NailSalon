@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">nail salon</string>
+    <string name="welcome_to_the_nail_boutique">Welcome to the Nail Boutique</string>
+    <string name="book_your_appointment">Book your appointment!</string>
+    <string name="may_offers">May Offers:</string>
+    <string name="_30_off_on_french_nails_and_25_off_on_gel_color">30% off on french nails and 25% off on gel color</string>
+    <string name="nail_boutique">Nail Boutique</string>
+    <string name="map">Map</string>
+    <string name="_2313_somewhere">2313 somewhere</string>
+    <string name="amman_jordan">Amman, Jordan</string>
+    <string name="_123_456_7890">123-456-7890</string>
+    <string name="logo">logo</string>
+    <string name="todo">TODO</string>
+    <string name="select_a_service">Select a service:</string>
+    <string name="select_a_design">Select a design:</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="welcome_to_the_glam_bar">Welcome to the glam bar!</string>
+    <string name="may_offers1">May Offers:</string>
+    <string name="the_glam_bar">The glam bar</string>
+    <string name="add">add</string>
+    <string name="name">Name</string>
+    <string name="date">date</string>
+    <string name="time">time</string>
+    <string name="confirmation_details">Confirmation Details</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="delete">Delete</string>
+    <string name="confirm">Confirm</string>
+    <string name="_11_am">11 am</string>
+</resources>

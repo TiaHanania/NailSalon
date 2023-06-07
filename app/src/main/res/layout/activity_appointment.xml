@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F99FA9"
+    tools:context=".AppointmentActivity"
+    tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/sacramento"
+            android:text="@string/the_glam_bar"
+            android:textAlignment="center"
+            android:textColor="#E8E8E8"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="31dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="40dp"
+            android:contentDescription="@string/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text"
+            app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="144dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:autoLink="phone"
+            android:fontFamily="@font/playball"
+            android:linksClickable="true"
+            android:text="@string/_123_456_7890"
+            android:textColor="#E8E8E8"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/text" />
+
+        <TextView
+            android:id="@+id/mapLocation"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:fontFamily="@font/playball"
+            android:onClick="openMap"
+            android:text="@string/map"
+            android:textColor="#E8E8E8"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.136"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/text" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="28dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="28dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintStart_toEndOf="@+id/phoneNumber"
+            app:layout_constraintTop_toBottomOf="@+id/text"
+            app:srcCompat="@android:drawable/ic_dialog_map" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="12dp"
+            android:background="#E0E0E0	"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/playball"
+            android:text="@string/select_a_service"
+            android:textColor="#E8E8E8"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <Spinner
+            android:id="@+id/optionSpinner"
+            android:layout_width="191dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/playball"
+            android:textColor="#E8E8E8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select" />
+
+        <TextView
+            android:id="@+id/design"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/playball"
+            android:text="@string/select_a_design"
+            android:textColor="#E8E8E8"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.556"
+            app:layout_constraintStart_toEndOf="@+id/select"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <Spinner
+            android:id="@+id/designSpinner"
+            android:layout_width="162dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="4dp"
+            android:background="#F99FA9"
+            android:fontFamily="@font/playball"
+            android:textColor="#E8E8E8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.465"
+            app:layout_constraintStart_toEndOf="@+id/optionSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/design" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="421dp"
+            android:layout_height="278dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/widget_size"
+            android:textColor="#484A5B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/optionSpinner" />
+
+        <Button
+            android:id="@+id/selectDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Select Date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+        <Button
+            android:id="@+id/selectTimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Select Time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectDateButton" />
+
+        <Button
+            android:id="@+id/bookAppointmentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Book Appointment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectTimeButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
